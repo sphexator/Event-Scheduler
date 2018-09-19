@@ -11,25 +11,22 @@ namespace EventScheduler
         private async Task MainAsync()
         {
             Directory.CreateDirectory("Data");
-            while (true)
+            var watcher = new FileSystemWatcher
             {
-                var watcher = new FileSystemWatcher
-                {
-                    Path = @"Data/",
-                    NotifyFilter = NotifyFilters.LastWrite,
-                    EnableRaisingEvents = true,
-                    Filter = "*.*"
-                };
-                watcher.Changed += OnChanged;
+                Path = @"Data/",
+                NotifyFilter = NotifyFilters.LastWrite,
+                EnableRaisingEvents = true,
+                Filter = "*.*"
+            };
+            watcher.Changed += OnChanged;
 
-                await Task.Delay(TimeSpan.FromHours(1));
-            }
+            await Task.Delay(-1);
         }
 
         private static void OnChanged(object source, FileSystemEventArgs e)
         {
             if ((e.ChangeType & WatcherChangeTypes.Created) != 0) return;
-            
+
         }
     }
 }
