@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventScheduler", "EventScheduler\EventScheduler.csproj", "{C1675E04-CC94-4F9B-90C1-AC9DC8701EE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1675E04-CC94-4F9B-90C1-AC9DC8701EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1675E04-CC94-4F9B-90C1-AC9DC8701EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1675E04-CC94-4F9B-90C1-AC9DC8701EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1675E04-CC94-4F9B-90C1-AC9DC8701EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5F5B486-C1E9-429C-AA04-3D24C1A45FB2}
+	EndGlobalSection
+EndGlobal
